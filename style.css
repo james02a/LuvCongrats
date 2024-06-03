@@ -1,0 +1,143 @@
+.img-container, .img-container2, .img-container3, .img-container4, .img-container5, .img-container6, .img-container8 {
+    position: absolute;
+    cursor: grab;
+    display:flex;
+    z-index: 1;
+    
+  
+}
+
+.img-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: rgba(255,    255, 255, 0.2) 0px 7px 29px 0px;
+    border: 4px solid wheat;
+    box-sizing: border-box;
+
+   
+}
+.img-container2 > img{
+    width: 300px;
+    height: 150px;
+    box-shadow: rgba(255,    255, 255, 0.2) 0px 7px 29px 0px;
+    border: 4px solid wheat;    
+    object-fit: cover;
+   
+}
+.img-container{
+    top: 55px;
+    left: 670px;
+    
+
+}
+.img-container3{
+    left: 790px;
+    top: 200;
+   
+}
+.img-container2{
+    top: 180px;
+    left: 540px;
+}
+
+.img-container4{
+    top: 389px;
+    left: 568px;
+}
+
+.img-container3 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 4px solid wheat;
+
+}
+.img-container4 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 4px solid wheat;
+}
+.img-container5 img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 4px solid wheat;
+}
+.img-container5{
+    top: 273px;
+    left: 776px;
+}
+.img-container6 img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 4px solid wheat;
+}
+.img-container6{
+    left: 708;
+    top: 364;
+}
+
+.img-container8 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 4px solid wheat;
+}
+.img-container8{
+    top:261px;
+    left: 575px;
+}
+
+
+
+
+
+/*carousel*/
+
+body{
+    background-color: #fafafa;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(./assest/background.jpg);
+    Background-repeat: no-repeat;
+    Background-position: center;
+    Background-attachment: fixed;
+    Background-size:cover;
+
+
+}
+.swiper{
+    width: 300px;
+    height: 300px;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid rgb(21, 0, 252);
+
+}
+.swiper-slide{
+    box-shadow: rgba(0, 0, 0, 0.35)0px 5px 15px;
+}
+
+
+
+
+ 
+
+
+

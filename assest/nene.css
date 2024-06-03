@@ -1,0 +1,78 @@
+body {
+    background-color: black;
+    font-family: system-ui, sans-serif;
+}
+.family{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 0;
+    margin-top: 50px;
+
+}
+img{
+    height: 500px;
+    width: 500px;
+    border: 8px solid white;
+    border-radius: 5px;
+}
+
+
+.tutorial {
+    height: 100px;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    display: flex;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+}
+
+.scroller {
+    display: flex;
+    gap: 10px;
+    animation: scroll 25s linear infinite;
+    animation-delay: calc(25s / -1);
+}
+
+.scroller:nth-child(2) {
+    animation: scroll2 25s linear infinite;
+    animation-delay: calc(25s / -2);
+}
+
+.item {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 7px;
+    box-shadow: rgba(255, 255, 255, 0) 0px 0px 15px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll2 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}

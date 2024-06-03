@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #4a4e69;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shine-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 80%;
+    height: 80%;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+
+.shine-container img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.shine-container:hover img {
+    scale: 1.1;
+}
+
+.shine-container:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 300%;
+    background-image: linear-gradient(to right, transparent 0%, #fff6 100%);
+    animation: shine-animation 2s linear forwards;
+}
+
+@keyframes shine-animation {
+    0% {
+      transform: rotate(45deg) translateX(-150%);
+    }
+    100% {
+      transform: rotate(45deg) translateX(150%);
+    }
+}
+    
+</style>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="shine-container">
+        
+        <img src="./assest/profile.jpg" alt="">
+    </div>
+</body>
+</html>
+    
+</body>
+</html>
